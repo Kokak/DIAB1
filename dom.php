@@ -1,6 +1,5 @@
 <?php
 
-//set_include_path(get_include_path() . PATH_SEPARATOR . '../library');
 set_include_path('library');
 
 require_once 'GooglePlay/InAppBilling/GooglePlayResponseData.php';
@@ -16,23 +15,17 @@ $responseData = $_GET['Resp'];
 //The signature provided with the response data (Base64)
 $signature = $_GET['Sign'];
 
-//if you wish to inspect or use the response data, you can create
-//a response object and pass it as the first argument to the Validator's verify method
-//$response = new AndroidMarket_Licensing_ResponseData($responseData);
-//$valid = $validator->verify($response, $signature);
 
-$validator = new GooglePlayResponseValidator(PUBLIC_KEY, PACKAGE_NAME);
+/*$validator = new GooglePlayResponseValidator(PUBLIC_KEY, PACKAGE_NAME);
 $valid = $validator->verify($responseData, $signature);
 
-// place this code inside a php file and call it f.e. "download.php"
-//$path = $_SERVER['DOCUMENT_ROOT']."/DGLES/new"; // change the path to fit your websites document structure
-//$path = "location:http://googledrive.com/host/0BzXTKrpSaUvJb0t5QzBiWHpWRFk/new";
 if ($valid)
 	echo '1';
 else
 	echo '0';
+*/
+
+echo "Glouc"
 
 exit;
-// example: place this kind of link into the document where the file download is offered:
-// <a href="download.php?download_file=some_file.pdf">Download here</a>
 ?>
