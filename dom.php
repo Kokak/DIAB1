@@ -25,7 +25,7 @@
 //	echo '0';
 
 
-echo "Glouc"
+echo 'Glouc';
 
 exit;
 ?>
