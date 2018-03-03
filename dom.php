@@ -26,8 +26,8 @@ $signature = $_GET['Sign'];
 
 
 echo 'Glouc';
-echo $responseData
-echo $signature
+echo $responseData;
+echo $signature;
 
 exit;
 ?>
