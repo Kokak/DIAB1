@@ -19,15 +19,15 @@ $signature = $_GET['Sign'];
 $validator = new GooglePlayResponseValidator(PUBLIC_KEY, PACKAGE_NAME);
 $valid = $validator->verify($responseData, $signature);
 
-//if ($valid)
-//	echo '1';
-//else
-//	echo '0';
+if ($valid)
+	echo '1';
+else
+	echo '0';
 
 
-echo 'Glouc';
-echo $responseData;
-echo $signature;
+//echo 'Glouc';
+//echo $responseData;
+//echo $signature;
 
 exit;
 ?>
