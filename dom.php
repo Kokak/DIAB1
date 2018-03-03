@@ -16,8 +16,8 @@ $responseData = $_GET['Resp'];
 $signature = $_GET['Sign'];
 
 
-//$validator = new GooglePlayResponseValidator(PUBLIC_KEY, PACKAGE_NAME);
-//$valid = $validator->verify($responseData, $signature);
+$validator = new GooglePlayResponseValidator(PUBLIC_KEY, PACKAGE_NAME);
+$valid = $validator->verify($responseData, $signature);
 
 //if ($valid)
 //	echo '1';
