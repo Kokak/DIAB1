@@ -11,9 +11,9 @@ define('PUBLIC_KEY', 'MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAon6x8F20czo7N8
 define('PACKAGE_NAME', 'com.kokak.DoomGLES');
 
 //The | delimited response data from the licensing server
-//$responseData = $_GET['Resp'];
+$responseData = $_GET['Resp'];
 //The signature provided with the response data (Base64)
-//$signature = $_GET['Sign'];
+$signature = $_GET['Sign'];
 
 
 //$validator = new GooglePlayResponseValidator(PUBLIC_KEY, PACKAGE_NAME);
@@ -26,6 +26,8 @@ define('PACKAGE_NAME', 'com.kokak.DoomGLES');
 
 
 echo 'Glouc';
+echo $responseData
+echo $signature
 
 exit;
 ?>
