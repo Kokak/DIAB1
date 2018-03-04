@@ -63,11 +63,14 @@ class GooglePlayResponseValidator  {
      */
     public function verify($responseData, $signature)
     {
-        if ($responseData instanceof GooglePlayResponseData) {
+        /*if ($responseData instanceof GooglePlayResponseData) {
             $response = $responseData;
         } else {
             $response = new GooglePlayResponseData($responseData);
-        }
+            //$response = new GooglePlayOrder($responseData);
+            //echo $response->getPackageName();
+        }*/
+        $response = $responseData;	// We sent only one order
 
         //check package name is valid
         if (!empty($packageName) && $packageName !== $response->getPackageName()) {
