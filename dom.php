@@ -25,9 +25,9 @@ else
 	echo '0';
 
 
-echo 'Glouc';
-echo $responseData;
-echo $signature;
+//echo 'Glouc';
+//echo $responseData;
+//echo $signature;
 
 exit;
 ?>
